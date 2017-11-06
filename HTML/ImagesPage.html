@@ -8,15 +8,15 @@
 		<link rel="stylesheet" href="HomePage.css">
 		<!-- This links the javascript file to my html file --> 
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-		<script type="text/javascript" src="src/redist/when.js"></script>
-		<script type="text/javascript" src="src/core.js"></script>
-		<script type="text/javascript" src="src/graphics.js"></script>
-		<script type="text/javascript" src="src/mapimage.js"></script>
-		<script type="text/javascript" src="src/mapdata.js"></script>
-		<script type="text/javascript" src="src/areadata.js"></script>
-		<script type="text/javascript" src="src/areacorners.js"></script>
-		<script type="text/javascript" src="src/scale.js"></script>
-		<script type="text/javascript" src="src/tooltip.js"></script>
+		<script type="text/javascript" src="../js/when.js"></script>
+		<script type="text/javascript" src="../js/core.js"></script>
+		<script type="text/javascript" src="../js/graphics.js"></script>
+		<script type="text/javascript" src="../js/mapimage.js"></script>
+		<script type="text/javascript" src="../js/mapdata.js"></script>
+		<script type="text/javascript" src="../js/areadata.js"></script>
+		<script type="text/javascript" src="../js/areacorners.js"></script>
+		<script type="text/javascript" src="../js/scale.js"></script>
+		<script type="text/javascript" src="../js/tooltip.js"></script>
 		<script src="HomePage.js"></script>
 		<!-- This is the title of the page (what appears on the tab) -->
 		<title>Isaac's Images</title>
@@ -28,7 +28,7 @@
 			<div class="imageMap">
 				<div id="map_demo" style="width:920px; height:1000px;">
 					<div style="width:720px; border:0; overflow: hidden; float:left;">
-						<img style="width:720px;border:0;" id="usa_image" src="images/usa_map_720.png" usemap="#usa" >
+						<img style="width:720px;border:0;" id="usa_image" src="../css/images/usa_map_720.png" usemap="#usa" >
 					</div>
 					<div  id="statelist" style="float:left; padding-left: 10px; width:180px; height: 445px; overflow-y: scroll;"></div>
 
@@ -79,7 +79,7 @@
 								stroke: false
 							},
 							//render_zoom: {
-							//    altImage: 'images/usa_map_huge.jpg'
+							//    altImage: '../css/images/usa_map_huge.jpg'
 							//},
 							mouseoutDelay: 0,
 							fadeInterval: 50,
@@ -195,7 +195,7 @@
 									val = getSelected($(el).find("option")).val();
 								if (val > "0") {
 									new_options = {
-										altImage: 'images/usa_map_720_alt_' + val + '.jpg',
+										altImage: '../css/images/usa_map_720_alt_' + val + '.jpg',
 										stroke: true
 									};
 								} else {
